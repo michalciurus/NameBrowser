@@ -1,13 +1,14 @@
 //  Created by Michal Ciurus
+
 import UIKit
 
-struct ToastConstants {
-    static let seconds = 3
+fileprivate enum ToastConstants {
+    fileprivate static let seconds = 3
 }
 
 extension UIView {
     
-    typealias C = ToastConstants
+    fileprivate typealias C = ToastConstants
     
     @objc func showToast(text: String) {
         let toastView = getToastView()

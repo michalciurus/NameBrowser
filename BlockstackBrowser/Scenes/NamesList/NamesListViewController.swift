@@ -4,7 +4,7 @@ import UIKit
 import BlockstackLogic
 import SharedTools
 
-class NamesListViewController: UITableViewController, Identifiable, InjectableInteractor {
+final class NamesListViewController: UITableViewController, Identifiable, InjectableInteractor {
     
     //MARK: Private Properties
     

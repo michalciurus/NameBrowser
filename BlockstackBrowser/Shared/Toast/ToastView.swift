@@ -1,4 +1,5 @@
 //  Created by Michal Ciurus
+
 import UIKit
 
 final class ToastView: UIView, Identifiable {

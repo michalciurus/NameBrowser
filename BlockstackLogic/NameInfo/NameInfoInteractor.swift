@@ -2,7 +2,7 @@
 
 import BlockstackInterface
 
-public class NameInfoInteractor {
+final public class NameInfoInteractor {
     
     //MARK: Private Properties
     

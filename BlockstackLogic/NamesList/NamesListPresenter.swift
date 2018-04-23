@@ -2,7 +2,13 @@
 
 import SharedTools
 
-public class NamesListPresenter: EmitsError {
+fileprivate struct NameListPresenterConstants {
+    fileprivate static let nameAvailableLabel = "Name available"
+}
+
+final public class NamesListPresenter: EmitsError {
+    
+    fileprivate typealias C = NameListPresenterConstants
     
     //MARK: Private Properties
     
@@ -42,9 +48,9 @@ public class NamesListPresenter: EmitsError {
         if available {
             names.value = []
             if let price = price {
-                infoLabel.value = "Name available for \(price) btc"
+                infoLabel.value = "\(C.nameAvailableLabel) for \(price) btc"
             } else {
-                infoLabel.value = "Name available!"
+                infoLabel.value = "\(C.nameAvailableLabel)!"
             }
         } else {
             names.value = [name]

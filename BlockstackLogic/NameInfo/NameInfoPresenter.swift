@@ -15,7 +15,7 @@ public struct ProfilePresenter {
     public let twitterUrl: String?
 }
 
-public class NameInfoPresenter: EmitsError {
+final public class NameInfoPresenter: EmitsError {
     
     //MARK: Private Properties
     

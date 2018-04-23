@@ -5,13 +5,13 @@ import BlockstackLogic
 import Kingfisher
 import SharedTools
 
-enum NameInfoViewControllerConstants {
+fileprivate enum NameInfoViewControllerConstants {
     static let cellIdentifier = "NameHistoryCell"
 }
 
-class NameInfoViewController: PoppableViewController, InjectableInteractor {
+final class NameInfoViewController: PoppableViewController, InjectableInteractor {
     
-    typealias C = NameInfoViewControllerConstants
+    fileprivate typealias C = NameInfoViewControllerConstants
     
     //MARK: Private Properties
     

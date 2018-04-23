@@ -4,7 +4,7 @@ import SharedTools
 import BlockstackLogic
 import BlockstackInterface
 
-class NameInfoRouter: Routable {
+final class NameInfoRouter: Routable {
     
     //MARK: Private Properties
     

@@ -2,7 +2,7 @@
 
 import UIKit
 
-class NamesListViewCell: UITableViewCell, Identifiable {
+final class NamesListViewCell: UITableViewCell, Identifiable {
     
     @IBOutlet weak var nameLabel: UILabel!
     

@@ -5,7 +5,7 @@ import UIKit
 import BlockstackInterface
 import BlockstackLogic
 
-class AppRouter: Routable {
+final class AppRouter: Routable {
     
     //MARK: Private Properties
     

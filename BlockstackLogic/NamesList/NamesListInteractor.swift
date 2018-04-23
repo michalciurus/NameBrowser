@@ -11,7 +11,7 @@ fileprivate enum NamesListInteractorConstants {
 }
 
 
-public class NamesListInteractor {
+final public class NamesListInteractor {
     
     fileprivate typealias C = NamesListInteractorConstants
     

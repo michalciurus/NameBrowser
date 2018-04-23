@@ -10,7 +10,7 @@ public protocol BlockstackInterfaceProtocol {
     func getHistory(name: String, completion: @escaping (Result<NameHistoryResponse>) -> Void)
 }
 
-public class BlockstackInterface: BlockstackInterfaceProtocol {
+final public class BlockstackInterface: BlockstackInterfaceProtocol {
     
     public init () { }
     
