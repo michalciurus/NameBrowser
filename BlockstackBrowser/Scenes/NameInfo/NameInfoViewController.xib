@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NameInfoViewController" customModule="BlockstackBrowser" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="vFq-OZ-80a" id="xK1-zT-AJp"/>
+                <outlet property="historyTableView" destination="cTa-P6-e0B" id="NqG-bA-mNs"/>
+                <outlet property="historyTitle" destination="CJs-P1-fSd" id="Vr8-os-1nr"/>
+                <outlet property="loadingIndicator" destination="OAj-Wm-Ig3" id="B7R-a8-e0T"/>
+                <outlet property="name" destination="TPq-Nf-uGA" id="v1v-f3-j98"/>
+                <outlet property="profileImage" destination="ecp-Oi-47i" id="Z6N-VD-M8P"/>
+                <outlet property="twitterButton" destination="bQF-oM-1JF" id="AWH-du-oLE"/>
+                <outlet property="username" destination="uTJ-qh-uRi" id="GkL-Si-jGS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ecp-Oi-47i">
+                    <rect key="frame" x="20" y="80" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="0eh-wK-tsC"/>
+                        <constraint firstAttribute="height" constant="80" id="W3X-g6-VXn"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ryan.id" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPq-Nf-uGA">
+                    <rect key="frame" x="10" y="37" width="355" height="24"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="999" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUE-dL-yFZ">
+                    <rect key="frame" x="120" y="85" width="37" height="17"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTJ-qh-uRi">
+                    <rect key="frame" x="174" y="93.5" width="186" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFq-OZ-80a">
+                    <rect key="frame" x="34" y="190" width="326" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                    <color key="textColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQF-oM-1JF">
+                    <rect key="frame" x="120" y="127" width="90" height="33"/>
+                    <color key="backgroundColor" name="BlockstackViolet"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="iEg-6f-TsK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                    <state key="normal" title="  Twitter  ">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapTwitter:" destination="-1" eventType="touchUpInside" id="pAL-Gk-6LT"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cTa-P6-e0B">
+                    <rect key="frame" x="20" y="340" width="339" height="307"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="OAj-Wm-Ig3">
+                    <rect key="frame" x="177" y="233.5" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="999" text="Name History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJs-P1-fSd">
+                    <rect key="frame" x="20" y="303" width="87" height="17"/>
+                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ecp-Oi-47i" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="2wF-Ga-WgY"/>
+                <constraint firstItem="OAj-Wm-Ig3" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-100" id="303-qW-au6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vFq-OZ-80a" secondAttribute="trailing" constant="15" id="4uY-Xh-Epg"/>
+                <constraint firstItem="TPq-Nf-uGA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="5Mk-IL-pzY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cTa-P6-e0B" secondAttribute="bottom" constant="20" id="8ND-dv-EiO"/>
+                <constraint firstItem="cTa-P6-e0B" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="BGh-tm-IPF"/>
+                <constraint firstItem="bQF-oM-1JF" firstAttribute="leading" secondItem="ecp-Oi-47i" secondAttribute="trailing" constant="20" id="InT-xq-zjc"/>
+                <constraint firstItem="CJs-P1-fSd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ORQ-oa-kKj"/>
+                <constraint firstItem="ecp-Oi-47i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Q4Z-i9-O2J"/>
+                <constraint firstItem="TPq-Nf-uGA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="SIZ-SY-dar"/>
+                <constraint firstItem="vFq-OZ-80a" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="34" id="Xpe-ZX-YLh"/>
+                <constraint firstItem="dUE-dL-yFZ" firstAttribute="leading" secondItem="ecp-Oi-47i" secondAttribute="trailing" constant="20" id="Xsy-ab-CQ5"/>
+                <constraint firstItem="cTa-P6-e0B" firstAttribute="top" secondItem="bQF-oM-1JF" secondAttribute="bottom" constant="180" id="bVh-VD-XCb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TPq-Nf-uGA" secondAttribute="trailing" constant="10" id="ckf-yF-sdb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uTJ-qh-uRi" secondAttribute="trailing" constant="15" id="foD-ie-SMo"/>
+                <constraint firstItem="uTJ-qh-uRi" firstAttribute="centerY" secondItem="dUE-dL-yFZ" secondAttribute="centerY" id="gcL-S8-jqT"/>
+                <constraint firstItem="bQF-oM-1JF" firstAttribute="top" secondItem="dUE-dL-yFZ" secondAttribute="bottom" constant="25" id="htG-C2-Hfw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cTa-P6-e0B" secondAttribute="trailing" constant="16" id="kdX-Kn-vcy"/>
+                <constraint firstItem="TPq-Nf-uGA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="nag-G8-eUH"/>
+                <constraint firstItem="dUE-dL-yFZ" firstAttribute="top" secondItem="ecp-Oi-47i" secondAttribute="top" constant="5" id="oGw-1I-iB3"/>
+                <constraint firstItem="uTJ-qh-uRi" firstAttribute="leading" secondItem="dUE-dL-yFZ" secondAttribute="trailing" constant="17" id="oZS-So-apC"/>
+                <constraint firstItem="OAj-Wm-Ig3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="thO-ne-eZr"/>
+                <constraint firstItem="vFq-OZ-80a" firstAttribute="top" secondItem="ecp-Oi-47i" secondAttribute="bottom" constant="30" id="xqM-AI-qEm"/>
+                <constraint firstItem="cTa-P6-e0B" firstAttribute="top" secondItem="CJs-P1-fSd" secondAttribute="bottom" constant="20" id="yub-M9-Z75"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BlockstackViolet">
+            <color red="0.15299999713897705" green="0.059000000357627869" blue="0.20399999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

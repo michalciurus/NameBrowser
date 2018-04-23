@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Names List View Controller-->
+        <scene sceneID="njx-QA-QlO">
+            <objects>
+                <tableViewController storyboardIdentifier="NamesListViewController" id="mk7-FY-BOc" customClass="NamesListViewController" customModule="BlockstackBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3QT-IT-7qO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="I4f-Ac-9hi">
+                            <rect key="frame" x="0.0" y="78" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="2jc-GO-XES">
+                                    <rect key="frame" x="177.5" y="12" width="20" height="20"/>
+                                </activityIndicatorView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbw-ow-jeo">
+                                    <rect key="frame" x="146.5" y="5.5" width="82" height="33"/>
+                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                                    <state key="normal" title="Load More">
+                                        <color key="titleColor" name="BlockstackViolet"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="loadMoreTapped" destination="mk7-FY-BOc" eventType="touchUpInside" id="ml4-t5-0p6"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9f-fs-zsw">
+                                    <rect key="frame" x="10" y="15" width="355" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.7420805533" blue="0.45785519359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Tbw-ow-jeo" firstAttribute="centerX" secondItem="I4f-Ac-9hi" secondAttribute="centerX" id="7mD-kV-Xxr"/>
+                                <constraint firstItem="2jc-GO-XES" firstAttribute="centerX" secondItem="I4f-Ac-9hi" secondAttribute="centerX" id="E4E-3G-Wku"/>
+                                <constraint firstItem="Tbw-ow-jeo" firstAttribute="centerY" secondItem="I4f-Ac-9hi" secondAttribute="centerY" id="QhO-8s-aCR"/>
+                                <constraint firstItem="2jc-GO-XES" firstAttribute="centerY" secondItem="I4f-Ac-9hi" secondAttribute="centerY" id="gq1-XB-I4a"/>
+                                <constraint firstItem="J9f-fs-zsw" firstAttribute="leading" secondItem="I4f-Ac-9hi" secondAttribute="leading" constant="10" id="hot-Jq-PKW"/>
+                                <constraint firstAttribute="trailing" secondItem="J9f-fs-zsw" secondAttribute="trailing" constant="10" id="lNU-wf-3C3"/>
+                                <constraint firstItem="J9f-fs-zsw" firstAttribute="top" secondItem="I4f-Ac-9hi" secondAttribute="top" constant="15" id="xIk-T8-wuQ"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NamesListViewCell" rowHeight="50" id="6Go-nV-dRR" customClass="NamesListViewCell" customModule="BlockstackBrowser" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Go-nV-dRR" id="hhG-Wf-mWO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8Q-FO-dlz">
+                                            <rect key="frame" x="10" y="10" width="355" height="40"/>
+                                            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES2-GA-MBZ">
+                                            <rect key="frame" x="25" y="20" width="330" height="20"/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ES2-GA-MBZ" firstAttribute="leading" secondItem="hhG-Wf-mWO" secondAttribute="leading" constant="25" id="51m-7b-VLx"/>
+                                        <constraint firstAttribute="trailing" secondItem="j8Q-FO-dlz" secondAttribute="trailing" constant="10" id="60s-tj-VNU"/>
+                                        <constraint firstItem="j8Q-FO-dlz" firstAttribute="leading" secondItem="hhG-Wf-mWO" secondAttribute="leading" constant="10" id="9cd-x4-8xH"/>
+                                        <constraint firstItem="ES2-GA-MBZ" firstAttribute="centerY" secondItem="hhG-Wf-mWO" secondAttribute="centerY" constant="5" id="fxV-Po-gJe"/>
+                                        <constraint firstAttribute="bottom" secondItem="j8Q-FO-dlz" secondAttribute="bottom" id="kl6-Io-b8b"/>
+                                        <constraint firstItem="j8Q-FO-dlz" firstAttribute="top" secondItem="hhG-Wf-mWO" secondAttribute="top" constant="10" id="rOE-Fo-bNc"/>
+                                        <constraint firstAttribute="trailing" secondItem="ES2-GA-MBZ" secondAttribute="trailing" constant="20" id="wtI-GC-WUH"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="ES2-GA-MBZ" id="u1C-4u-KCj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mk7-FY-BOc" id="ior-NU-2a8"/>
+                            <outlet property="delegate" destination="mk7-FY-BOc" id="CNt-te-gBK"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="bottomActivityIndicator" destination="2jc-GO-XES" id="BwC-ik-eQT"/>
+                        <outlet property="infoLabel" destination="J9f-fs-zsw" id="nvF-oV-cSr"/>
+                        <outlet property="loadMoreButton" destination="Tbw-ow-jeo" id="N5h-Oy-6Gs"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7he-MN-oRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.59999999999999" y="213.64317841079463"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BlockstackViolet">
+            <color red="0.15299999713897705" green="0.059000000357627869" blue="0.20399999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
