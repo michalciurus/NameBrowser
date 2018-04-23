@@ -94,12 +94,12 @@
                         <action selector="didTapTwitter:" destination="-1" eventType="touchUpInside" id="pAL-Gk-6LT"/>
                     </connections>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cTa-P6-e0B">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cTa-P6-e0B">
                     <rect key="frame" x="20" y="340" width="339" height="307"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="OAj-Wm-Ig3">
-                    <rect key="frame" x="177" y="233.5" width="20" height="20"/>
+                    <rect key="frame" x="177" y="253.5" width="20" height="20"/>
                 </activityIndicatorView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="999" text="Name History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJs-P1-fSd">
                     <rect key="frame" x="20" y="303" width="87" height="17"/>
@@ -111,7 +111,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ecp-Oi-47i" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="2wF-Ga-WgY"/>
-                <constraint firstItem="OAj-Wm-Ig3" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-100" id="303-qW-au6"/>
+                <constraint firstItem="OAj-Wm-Ig3" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-80" id="303-qW-au6"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vFq-OZ-80a" secondAttribute="trailing" constant="15" id="4uY-Xh-Epg"/>
                 <constraint firstItem="TPq-Nf-uGA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="5Mk-IL-pzY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cTa-P6-e0B" secondAttribute="bottom" constant="20" id="8ND-dv-EiO"/>

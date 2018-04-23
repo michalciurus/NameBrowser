@@ -43,7 +43,16 @@ final public class NameInfoPresenter: EmitsError {
     func set(history: NameHistoryResponse) {
         guard let operations = history.operations else { return }
         nameHistory.value = operations.map { operation -> NameHistoryPresenter in
-            return NameHistoryPresenter(operationLabel: operation.opcode.rawValue)
+            var description = ""
+            switch operation.opcode {
+            case .importOp: description = "Imported"
+            case .preorder: description = "Preordered"
+            case .registration: description = "Registered"
+            case .renewal: description = "Renewed"
+            case .transfer: description = "Transfered"
+            case .update: description = "Updated"
+            }
+            return NameHistoryPresenter(operationLabel: description)
         }
     }
     
