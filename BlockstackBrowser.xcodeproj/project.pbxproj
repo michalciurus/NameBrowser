@@ -33,7 +33,7 @@
 		3FB65B4B2088D374004CAB00 /* NamesListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB65B4A2088D374004CAB00 /* NamesListViewCell.swift */; };
 		3FB65B4D2088D388004CAB00 /* NamesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB65B4C2088D388004CAB00 /* NamesList.storyboard */; };
 		3FB65B4F2088D3FC004CAB00 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB65B4E2088D3FC004CAB00 /* AppRouter.swift */; };
-		3FB65B532088D613004CAB00 /* ViewControllerInitHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB65B522088D613004CAB00 /* ViewControllerInitHelpers.swift */; };
+		3FB65B532088D613004CAB00 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB65B522088D613004CAB00 /* Identifiable.swift */; };
 		3FB65B572088DCC1004CAB00 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FB65B552088DCC0004CAB00 /* Lato-Regular.ttf */; };
 		3FB65B582088DCC1004CAB00 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FB65B562088DCC0004CAB00 /* Lato-Bold.ttf */; };
 		3FB65B5E2088E26D004CAB00 /* NamesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB65B5D2088E26D004CAB00 /* NamesListPresenter.swift */; };
@@ -159,7 +159,7 @@
 		3FB65B4A2088D374004CAB00 /* NamesListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesListViewCell.swift; sourceTree = "<group>"; };
 		3FB65B4C2088D388004CAB00 /* NamesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NamesList.storyboard; sourceTree = "<group>"; };
 		3FB65B4E2088D3FC004CAB00 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		3FB65B522088D613004CAB00 /* ViewControllerInitHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInitHelpers.swift; sourceTree = "<group>"; };
+		3FB65B522088D613004CAB00 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		3FB65B552088DCC0004CAB00 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		3FB65B562088DCC0004CAB00 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		3FB65B5D2088E26D004CAB00 /* NamesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesListPresenter.swift; sourceTree = "<group>"; };
@@ -315,7 +315,7 @@
 			children = (
 				3F7B3476208DEB5500A4EBC9 /* Toast */,
 				3F7B3474208DE9EF00A4EBC9 /* UIViewController+ShowError.swift */,
-				3FB65B522088D613004CAB00 /* ViewControllerInitHelpers.swift */,
+				3FB65B522088D613004CAB00 /* Identifiable.swift */,
 				3F097BD22089F6520066E57E /* InjectableInteractor.swift */,
 				3F7B3470208DD42300A4EBC9 /* PoppableViewController.swift */,
 				3F8F83B8208E005E0068822E /* UIColor+Blockstack.swift */,
@@ -827,7 +827,7 @@
 				3F8F83B9208E005E0068822E /* UIColor+Blockstack.swift in Sources */,
 				3F097BD32089F6520066E57E /* InjectableInteractor.swift in Sources */,
 				3F7B3471208DD42300A4EBC9 /* PoppableViewController.swift in Sources */,
-				3FB65B532088D613004CAB00 /* ViewControllerInitHelpers.swift in Sources */,
+				3FB65B532088D613004CAB00 /* Identifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
